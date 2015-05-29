@@ -14,9 +14,11 @@
 \rhead{ {\it Z. Zinger}\\{\it p. \thepage} } % put text in header (right side)
 \cfoot{}                                     % the foot is empty
 \topmargin=-0.5in % start text higher on the page
+%\usepackage{multicol}
+\usepackage{parcolumns}
 
 \begin{document}
-\
+
 \thispagestyle{empty} % this page has no header  
 \name{Alex Emrie\\[12pt]}% the \\[12pt] adds a blank line after name
 
@@ -31,12 +33,14 @@
 \section{\centerline{EDUCATION}} 
 \vspace{8pt} 
 
-{\sl Full-Stack Developer Course} \\ 
-Galvanize, Boulder, CO      \hfill    Present
+{\sl Full-Stack Developer Course}  \hfill    Present\\ 
+Galvanize, Boulder, CO     
 
-{\sl Bachelor of Arts in Biology} \\
-Whitman College, Walla Walla, WA \hspace{0.2in}  GPA 3.50 \hfill 2009 - 2013 \\
-Sigma Xi Scientific Research Society Associate Member
+{\sl Bachelor of Arts in Biology} \hfill 2009 - 2013\\
+Whitman College, Walla Walla, WA \hspace{0.2in}  GPA 3.50  \\
+Sigma Xi Scientific Research Society Associate Member\\
+Whitman Collegiate Cycling Member (NWCC Road Race Champion)\\
+Juvenile Diversion Program Volunteer
  
 \vspace{0.2in} 
 \section{\centerline{PROFESSIONAL EXPERIENCE}} 
@@ -51,10 +55,18 @@ Financial Analyst Intern
    \end{itemize}
    
 {\sl Express Employment Professionals} \hfill    Oct - Nov 2013\\
-Temporary Associate 
+Contract Associate 
 
  \begin{itemize} \itemsep -2pt
   \item  Processed professional employment applications for the Department of Regulatory Agencies (DORA).
+\end{itemize} \vspace{-6pt}
+
+{\sl RMC Consultants} \hfill    Jun - Jul 2013\\
+Field Technician
+
+ \begin{itemize} \itemsep -2pt
+  \item  Measured water contamination at abandoned missile silo in Cheyenne, WY.
+  \item  Installed mine closure devices for wildlife in Naturita, CO
 \end{itemize} \vspace{-6pt}
   
 {\sl U.S. Geological Survey (USGS)} \hfill  May - Jun 2012 \\
@@ -63,60 +75,20 @@ Research Assistant
   \item  Conducted invertebrate transect sampling and regression analysis to determine possible correlations between arthropod and songbird distributions across arctic tundra.
  \end{itemize}
 
-\newpage
-
-{\sl Colonie Center Shopping Mall} \hfill                  January - June 1989 \\
-Albany, NY 
-  \begin{itemize}
-  \item Served  as  consultant  for new management team in techniques 
-    for managing change. 
- \item  Developed and administered organizational climate survey. 
- \item  Facilitated management-employee feedback sessions. 
- \end{itemize}
-
 \vspace{0.2in} 
-\section{\centerline{ COMPUTING SKILLS }}
-\vspace{8pt} 
-Experienced in SPSS,  BMDP  statistical  packages;  LOTUS  1-2-3, 
-Personal Editor 
- 
-\vspace{0.2in} 
-\section{\centerline{PUBLICATIONS}} 
-\vspace{15pt}
-\begin{itemize}
-   \item "Job Analysis - A True Picture," Journal of Headhunters, Vol. 
-    5, Number 3. Fall 1990 
-   \item "The   Fine  Tuning  of  Interpersonal  Skills,"  Journal  of 
-    Recruiting/Hiring, Vol. 16, Number 7, August 1990 
-   \end{itemize}
+\section{\centerline{}} 
+\vspace{8pt}
 
+\raggedright
+\begin{parcolumns}{2}
+\colchunk{\centering \large \underline{Languages \& Frameworks}}
+\colchunk{\centering \large \underline{Skills}}
 
-\vspace{0.2in} 
-\section{\centerline{MEMBERSHIPS}} 
-\vspace{-5pt} % reduce space between section title and contents
-\begin{center}
-      American Psychological Association, Student Affiliate \\
-      Vice President of Activities, RPI Weight-training Club \\ 
-      Chairperson, Entertainment Committee, Utica College \\ 
-      Latin-American Student Union, Utica College \\
-      Member All-American Nautilus 
- \end{center}
- \vspace{0.2in}
-\section{\centerline{HONORS}} 
-\vspace{-5pt}
-\begin{center}
-  Full tuition assistantship, Rensselaer Polytechnic Institute,  \\
-                  PSI CHI National Honor Society \\
-              PHI THETA KAPPA National Honor Society 
-\end{center}
- 
-\vspace{0.2in}
-\section{\centerline{INTERESTS}} 
-\vspace{-5pt} 
-\begin{center}
-Classical piano, Jazz,  bodybuilding/aerobic  exercise,  cooking, 
-                             dancing
-\end{center} 
+\colplacechunks
+\colchunk{\begin{itemize}\item \textit{Proficient:} Ruby on Rails, JavaScript \item \textit{Familiar:} jQuery, SQL, HTML, CSS, Node.js, Express.js, MongoDB\end{itemize}}
+\colchunk{\begin{itemize}\item Organized and detail-oriented \item Critical thinking and creative problem solving \item Collaborative group work\end{itemize}}
+\end{parcolumns}
+
  
 \end{resume} 
 \end{document}
