@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  28 MAY 2015 20:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  28 MAY 2015 20:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -86,26 +86,31 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 31.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 31.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 52.
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--41
+
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 49.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 52.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 49.
 \pc@column@1=\box26
 \pc@column@width@1=\dimen106
 \pc@column@2=\box27
 \pc@column@width@2=\dimen107
 Package parcolumns Info: Width of column 1 calculated as 224.87747pt on input l
-ine 83.
+ine 78.
 Package parcolumns Info: Width of column 2 calculated as 224.87747pt on input l
-ine 83.
+ine 78.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 84.
+(Font)              <12> on input line 79.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 84.
+(Font)              <8> on input line 79.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 84.
+(Font)              <6> on input line 79.
  [1
 
 {/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] ) 
@@ -125,7 +130,7 @@ l/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/
 texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/local/t
 exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
 xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on res8.pdf (1 page, 93774 bytes).
+Output written on res8.pdf (1 page, 95408 bytes).
 PDF statistics:
  36 PDF objects out of 1000 (max. 8388607)
  25 compressed objects within 1 object stream
