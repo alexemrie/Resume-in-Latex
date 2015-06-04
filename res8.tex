@@ -6,51 +6,92 @@
 %\usepackage{newcent}   % uses new century schoolbook postscript font 
 \newsectionwidth{0pt}  % So the text is not indented under section headings
 \usepackage{fancyhdr}  % use this package to get a 2 line header
-\renewcommand{\headrulewidth}{0pt} % suppress line drawn by default by fancyhdr
-\setlength{\headheight}{24pt} % allow room for 2-line header
-\setlength{\headsep}{24pt}  % space between header and text
-\setlength{\headheight}{24pt} % allow room for 2-line header
+\renewcommand{\headrulewidth}{1pt} % suppress line drawn by default by fancyhdr
+\setlength{\headheight}{30pt} % allow room for 2-line header
+\setlength{\headsep}{0pt}  % space between header and text
+\setlength{\headheight}{30pt} % allow room for 2-line header
 \pagestyle{fancy}     % set pagestyle for document
-\rhead{ {\it A. Emrie}\\{\it p. \thepage} } % put text in header (right side)
+
+\usepackage{varwidth}
+
+
+\lhead{{\LARGE \bf Alex Emrie}}
+\rhead{\textit{Email:} emrieaj@gmail.com \\
+  \textit{Phone:} (303) 358-8190 \\
+  \textit{github.com/alexemrie/}}
+  
+  
+%\rhead{ {\it A. Emrie}\\{\it p. \thepage} } % put text in header (right side)
+
+
 \cfoot{}                                     % the foot is empty
 \topmargin=-0.5in % start text higher on the page
 \usepackage{parcolumns}
+\usepackage{hyperref}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
 
 \begin{document}
 
-\thispagestyle{empty} % this page has no header  
-\name{\LARGE Alex Emrie\\[12pt]}% the \\[12pt] adds a blank line after name
+%\thispagestyle{empty} % this page has no header  
 
-\address{{\bf Contact} \\ \textit{Email:} emrieaj@gmail.com \\
-  \textit{Phone:} (303) 358-8190 \\   \textit{www.linkedin.com/in/alexemrie}
-  \\   \textit{github.com/alexemrie}}
-                                      
-\address{{\bf Address} \\ 207 S Mc Intyre Way \\ Golden, CO 80401\\
- }
+
+
+%\name{\LARGE Alex Emrie\\[12pt]}% the \\[12pt] adds a blank line after name
+
+
+%\address{{\bf Contact} \\ \textit{Email:} emrieaj@gmail.com \\
+%  \textit{Phone:} (303) 358-8190}
+                                        
+%\address{{\bf GitHub}
+%\\ \href{https://github.com/alexemrie/}{https://github.com/alexemrie/}
+% }
 
 \begin{resume}
- 
-\section{\centerline{EDUCATION}} 
-\vspace{8pt} 
 
-{\sl Full-Stack Developer Course}  \hfill    Present\\ 
-Galvanize, Boulder, CO\\
-24-week intensive developer program 
-(Ruby on Rails, JavaScript, HTML, CSS)
+	\begin{center}
+	\begin{varwidth}[t]{\textwidth}
+	\raggedright
+	
+	Dedicated, hardworking new graduate with an eye for detail and passion for creative problem-solving. \\
+	Seeking a strong, innovative company needing fresh talent to help make valuable contributions \\
+	and to continue learning alongside more senior software engineers.
+	
+	\end{varwidth}	
+	\end{center}
 
-{\sl Bachelor of Arts in Biology} \hfill 2009 - 2013\\
-Whitman College, Walla Walla, WA \hspace{0.2in}  GPA 3.50 
- 
+\vspace{0.2in} 
+
+\raggedright
+\begin{parcolumns}{2}
+
+\colchunk{\centering \large \underline{Languages \& Frameworks}}
+\colchunk{\centering \large \underline{Personal Skills}}
+
+\colplacechunks
+\colchunk{\begin{itemize}\item \textit{Proficient:} Ruby on Rails, JavaScript \item \textit{Familiar:} HTML, CSS, jQuery, Node.js, Express.js, MongoDB, SQL, \LaTeX \end{itemize}}
+\colchunk{\begin{itemize}\item Organized and detail-oriented \item Critical thinking and creative problem solving \item Collaborative group work\end{itemize}}
+\end{parcolumns}
+  
 \vspace{0.1in} 
 \section{\centerline{PROFESSIONAL EXPERIENCE}} 
 \vspace{8pt}
+
+{\sl Full-Stack Developer Student} \hfill        Jan 2015 - Present \\
+Galvanize
+  
+   \begin{itemize} \itemsep -2pt % reduce space between items
+   \item 24-week intensive developer program (Ruby on Rails, JavaScript, HTML, CSS). 
+   \item \textit{Projects}: \href{https://obscure-wave-9790.herokuapp.com/}{MusicBoxApp} (Spotify API, Ajax, JavaScript, CSS), \href{https://still-tundra-4409.herokuapp.com/}{gCamp} (Bootstrap, HTML, Ruby on Rails, Haml, Heroku), \href{https://github.com/alexemrie/weather-app}{WeatherApp} (Apache Cordova, Ajax, Flickr/OpenWeatherMap API)
+   \end{itemize}
+
 {\sl Financial Analyst Intern} \hfill        Dec 2013 - Jan 2015 \\
 Lutheran Medical Center
   
    \begin{itemize} \itemsep -2pt % reduce space between items
-   \item Personally implemented standardized scrubs initiative for 300+ nurses and non-clinical staff. 
+   \item Personally managed standardized scrub uniform initiative for entire nursing and non-clinical staff resulting in increased patient satisfaction and quality standards.
    \item Analysis of key performance metrics across multiple departments resulting in 0.4 day reduction in length of stay with over \$500k in cost-savings.
-  \item Actively involved in projects expanding Obstetrics/Orthopedic service lines.
    \end{itemize}
    
 {\sl Contract Associate} \hfill    Oct - Nov 2013\\
@@ -74,39 +115,36 @@ U.S. Geological Survey (USGS)
   \item  Conducted invertebrate transect sampling and regression analysis to determine possible correlations between arthropod and songbird distributions across arctic tundra.
  \end{itemize}
 
-\vspace{0.2in} 
+\section{\centerline{EDUCATION}} 
+\vspace{8pt} 
 
-\raggedright
-\begin{parcolumns}{2}
-\colchunk{\centering \large \textbf{\underline{Languages \& Frameworks}}}
-\colchunk{\centering \large \textbf{\underline{Personal Skills}}}
-
-\colplacechunks
-\colchunk{\begin{itemize}\item \textit{Proficient:} Ruby on Rails, JavaScript \item \textit{Familiar:} HTML, CSS, jQuery, Node.js, Express.js, MongoDB, SQL, \LaTeX \end{itemize}}
-\colchunk{\begin{itemize}\item Organized and detail-oriented \item Critical thinking and creative problem solving \item Collaborative group work\end{itemize}}
-\end{parcolumns}
+{\sl Bachelor of Arts in Biology} \hfill 2009 - 2013\\
+Whitman College, Walla Walla, WA \hspace{0.2in}  GPA 3.50 
 
 \section{\centerline{ACHIEVEMENTS}}
-\vspace{8pt}
-\begin{center}
-Sigma Xi Scientific Research Society Associate Member\\
-Whitman Collegiate Cycling Member (NWCC Road Race Champion)\\
-Juvenile Diversion Program Volunteer\\
-Tae Kwon Do, First Degree Black Belt
-\end{center}
+\vspace{4pt}
+
+
+
+	\begin{center}
+	\begin{varwidth}[t]{\textwidth}
+	\raggedright
+
+	Sigma Xi Scientific Research Society Associate Member\\
+	Whitman Collegiate Cycling Member (NWCC Road Race Champion)\\
+	Juvenile Diversion Program Volunteer\\
+	Tae Kwon Do, First Degree Black Belt 
+
+	\end{varwidth}	
+	\end{center}
+
+
+%\begin{center}
+%Sigma Xi Scientific Research Society Associate Member\\
+%Whitman Collegiate Cycling Member (NWCC Road Race Champion)\\
+%Juvenile Diversion Program Volunteer\\
+%Tae Kwon Do, First Degree Black Belt
+%\end{center}
  
 \end{resume} 
 \end{document}
-
-
-
-
-
-
-
-
-
-
-
-
-
